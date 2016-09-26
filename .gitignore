@@ -14,6 +14,7 @@ _temp
 dist
 aot
 
+!rollup.js
 !karma*.js
 !protractor*.js
 !systemjs.config.js
