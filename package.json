@@ -3,16 +3,23 @@
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
-    "start": "npm run build && tsc && concurrently \"tsc -w\" \"lite-server\" ",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lint": "tslint ./app/**/*.ts -t verbose",
     "postinstall": "typings install",
     "typings": "typings",
-    "ngc": " rimraf aot && \"node_modules/.bin/ngc\" -p tsconfig-aot.json",
+
+
+    "lint": "tslint ./app/**/*.ts -t verbose",
+
+
+    "ngc": "rimraf aot && \"node_modules/.bin/ngc\" -p tsconfig-aot.json",
     "rollup": "rimraf dist && \"node_modules/.bin/rollup\" -c rollup.js",
     "build": "npm run ngc && npm run rollup",
-    "serve": "lite-server"
+    "serve": "lite-server",
+
+
+    "start": "npm run build && tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+    
   },
   "keywords": [],
   "author": "",
