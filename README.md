@@ -14,6 +14,6 @@ Instructions:
 
 Download and run "npm install".
 
-To run locally with live reload, "npm run start".
-
 To build with ngc and rollup, "npm run build", followed by "npm run serve" to serve the built app.
+
+To run with live reload, "npm run start" which builds first with "npm run build", then live-reloads with concurrently.
