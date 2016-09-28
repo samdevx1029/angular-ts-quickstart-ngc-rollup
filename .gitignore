@@ -4,12 +4,16 @@ node_modules
 jspm_packages
 link-checker-results.txt
 **/*npm-debug.log.*
-*.js
-*.js.map
 e2e/**/*.js
 e2e/**/*.js.map
 _test-output
 _temp
+
+# typescript artifacts
+app/*.js
+app/*.map
+app/**/*.js
+app/**/*.map
 
 dist
 aot
